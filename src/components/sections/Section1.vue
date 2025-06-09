@@ -26,7 +26,7 @@
       </div>
     </div>
     <div
-      class="relative sm:order-2 order-1 bg-gradient-to-r from-red-200/50 to-amber-100/50 rounded-b-full"
+      class="relative sm:order-2 order-1 bg-gradient-to-r from-red-200/50 to-amber-100/50 rounded-b-full mx-16"
     >
       <div class="flex sm:hidden justify-center">
         <h1 class="text-2xl font-bold font-serif">Logo</h1>
