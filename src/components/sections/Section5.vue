@@ -16,7 +16,7 @@ const toggleAccordion = (idx) => {
 </script>
 
 <template>
-  <section class="flex flex-col sm:flex-row justify-around mt-16">
+  <section class="flex flex-col sm:flex-row justify-around mt-30 sm:mx-30">
     <div class="sm:order-1 order-2 w-full">
       <div v-for="(item, idx) in 3" :key="idx" class="mb-4 px-6">
         <div

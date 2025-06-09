@@ -14,21 +14,21 @@ const props = defineProps({
 </script>
 
 <template>
-  <section class="flex sm:flex-row flex-col justify-around mt-30 space-x-12">
-    <div
-      class="flex flex-col mx-2 max-w-xl text-center flex-1 sm:items-start items-center"
-    >
+  <section class="flex sm:flex-row flex-col justify-around sm:space-x-16 mt-30 sm:mx-30">
+    <div class="flex flex-col max-w-xl text-center flex-1 sm:items-start items-center">
       <img
         src="/assets/images/marni-image-cluster-0aljjjUR.webp"
         alt=""
-        class="w-full h-auto max-w-xs sm:max-w-xl"
+        class="mx-6 w-full h-auto max-w-xs sm:max-w-xl"
       />
     </div>
 
     <div class="flex-1 flex flex-col mx-6">
       <div>
         <h1 class="text-6xl font-bold font-serif">Meet our founder,</h1>
-        <h1 class="text-6xl font-bold font-serif text-orange-500">{{ founder.name }}</h1>
+        <h1 class="text-6xl font-bold font-serif text-orange-800/50">
+          {{ founder.name }}
+        </h1>
 
         <span class="block min-w-64 text-lg mt-4">
           {{ founder.testimony }}

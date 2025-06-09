@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <section class="flex flex-col sm:flex-row justify-around mx-16">
+  <section class="flex flex-col sm:flex-row justify-around">
     <div class="sm:order-1 order-2 flex flex-col mx-2">
       <div class="">
         <div class="sm:flex justify-start hidden mb-20 p-4 sm:mb-20 sm:p-4 order-1">
@@ -12,7 +12,7 @@
             How to attract your <br />
             dream partner
           </h1>
-          <span class="block text-lg mt-4">
+          <span class="block text-lg mt-4 text-gray-800/80">
             Overcone the beliefs that block your ability to connect with high quality men
             and learn the real reason why smart, successful women are still single after
             30.
@@ -26,7 +26,7 @@
       </div>
     </div>
     <div
-      class="relative sm:order-2 order-1 bg-gradient-to-r from-red-100/50 to-amber-100/50 rounded-b-full"
+      class="relative sm:order-2 order-1 bg-gradient-to-r from-red-200/50 to-amber-100/50 rounded-b-full"
     >
       <div class="flex sm:hidden justify-center">
         <h1 class="text-2xl font-bold font-serif">Logo</h1>

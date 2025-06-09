@@ -28,7 +28,7 @@ if (typeof window !== "undefined") {
 
 <template>
   <section
-    class="flex flex-col sm:flex-row justify-around space-x-0 sm:space-x-6 items-start bg-stone-500 w-full mt-16 p-4 sm:p-16"
+    class="flex flex-col sm:flex-row justify-around space-x-0 items-start bg-stone-600 w-full mt-30 p-4 sm:px-30"
   >
     <div v-if="isMobile" class="w-full flex flex-col items-center">
       <div class="relative w-full">
@@ -36,8 +36,8 @@ if (typeof window !== "undefined") {
           class="bg-orange-100 rounded-br-[80px] rounded-tl-[80px] p-6 mx-2 transition-all duration-300"
         >
           <div class="m-2">
-            <h1>"{{ testimonials[current].quote }}"</h1>
-            <small class="text-gray-800/60">{{ testimonials[current].small }}</small>
+            <h1 class="font-bold">"{{ testimonials[current].quote }}"</h1>
+            <small class="text-gray-800/70">{{ testimonials[current].small }}</small>
             <div class="flex items-center gap-2 mt-6">
               <img
                 :src="testimonials[current].img"
@@ -100,18 +100,18 @@ if (typeof window !== "undefined") {
     <div v-else class="flex flex-row w-full justify-around space-x-6">
       <div class="flex flex-col justify-start self-start w-1/2">
         <div class="mb-6">
-          <h1 class="text-white text-2xl font-bold font-serif">
+          <h1 class="text-white text-3xl font-bold font-serif">
             See how women have been impacted by the
           </h1>
-          <span class="text-2xl text-orange-200 font-bold font-serif"
+          <span class="text-3xl text-orange-200 font-bold font-serif"
             >power of love:</span
           >
         </div>
         <div class="bg-orange-100 rounded-br-[150px] p-12">
           <div class="m-4">
-            <h1>"{{ testimonials[0].quote }}"</h1>
+            <h1 class="font-bold font-serif mb-4">"{{ testimonials[0].quote }}"</h1>
             <small class="text-gray-800/60">{{ testimonials[0].small }}</small>
-            <div class="flex items-center gap-2 mt-6">
+            <div class="flex items-center gap-2 mt-4">
               <img
                 :src="testimonials[0].img"
                 alt=""
@@ -126,10 +126,10 @@ if (typeof window !== "undefined") {
       </div>
       <div class="flex flex-col justify-start self-start w-1/2">
         <div class="bg-orange-100 rounded-tl-[150px] p-12">
-          <div class="flex flex-col justify-center">
-            <h1>"{{ testimonials[1].quote }}"</h1>
-            <small class="text-gray-800/60">{{ testimonials[1].small }}</small>
-            <div class="flex items-center gap-2 mt-6">
+          <div class="flex flex-col justify-center mx-4">
+            <h1 class="font-bold font-serif mb-4">"{{ testimonials[1].quote }}"</h1>
+            <small class="text-gray-800/75">{{ testimonials[1].small }}</small>
+            <div class="flex items-center gap-2 mt-4">
               <img
                 :src="testimonials[1].img"
                 alt=""

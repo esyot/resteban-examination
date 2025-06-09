@@ -26,23 +26,25 @@ const currentDay = computed(() => {
 
 <template>
   <section
-    class="flex flex-col sm:items-start items-center sm:flex-row justify-around mt-16"
+    class="flex flex-col sm:items-start items-center sm:flex-row justify-around mt-30"
   >
-    <div class="sm:w-full w-1/2 flex justify-center">
-      <h1 class="text-3xl font-bold font-serif">What's on the agenda</h1>
+    <div class="sm:w-full flex justify-center">
+      <h1 class="text-4xl font-bold font-serif whitespace-nowrap">
+        What's on the agenda
+      </h1>
     </div>
 
-    <div class="w-full">
+    <div class="w-full px-6">
       <ul
-        class="flex flex-col sm:flex-row px-4 justify-around items-center bg-stone-500 rounded-[40px] m-4 sm:rounded-full py-4 font-serif text-xl"
+        class="flex flex-col sm:flex-row justify-around items-center bg-stone-500 rounded-[40px] sm:rounded-full py-2 sm:px-2 px-4 font-serif text-xl"
       >
         <li
           v-for="step in dailySteps"
           :key="step.day"
           @click="selectDay(step.day)"
           :class="[
-            'rounded-full cursor-pointer text-center sm:text-left sm:w-auto w-full mx-6 px-4 py-2',
-            selectedDay === step.day ? 'bg-orange-100 ' : '',
+            'rounded-full cursor-pointer text-center py-2 w-full ',
+            selectedDay === step.day ? 'bg-orange-100' : '',
           ]"
         >
           Day {{ step.day }}
@@ -51,7 +53,7 @@ const currentDay = computed(() => {
 
       <div class="flex flex-col justify-center sm:items-start items-center mt-6">
         <h1 class="text-2xl font-bold font-serif">{{ currentDay.title }}</h1>
-        <p class="mx-4">
+        <p class="">
           {{ currentDay.description }}
         </p>
       </div>

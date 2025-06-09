@@ -100,9 +100,9 @@ const steps = [
 const dailySteps = [
   {
     day: 1,
-    title: "Clarify Your Intentions",
+    title: "Your REVEAL Day! (aka The Silver Bullet)",
     description:
-      "Take time today to deeply reflect on what you truly desire in a romantic relationship. Go beyond surface-level wants and consider the qualities, values, and emotional connection that are most important to you. Write down your thoughts in a journal, and be honest with yourself about your hopes, fears, and expectations. Setting clear intentions will help you navigate your dating journey with purpose and confidence, ensuring that you attract partners who align with your authentic self and long-term goals.",
+      "Identify your personal 10% blindspot (everyone has one) that sends quality men running for the hills and clear limiting beliefs that keep you stuck in the scarcity mindset (so you can attract a quality man who's words and actions actually match). By the end of the day, you'll know EXACTLY why you're single and what next steps are required to get you closer to magnetizing high-caliber men and creating the life you love.",
   },
   {
     day: 2,
