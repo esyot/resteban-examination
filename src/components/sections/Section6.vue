@@ -53,7 +53,20 @@ if (typeof window !== "undefined") {
       </div>
       <div class="flex items-center w-full justify-between mt-4">
         <button @click="prev" class="text-orange-100">
-          <i class="fas fa-chevron-left"></i>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
         </button>
 
         <div class="flex justify-center gap-4">
@@ -66,7 +79,20 @@ if (typeof window !== "undefined") {
         </div>
 
         <button @click="next" class="text-orange-100">
-          <i class="fas fa-chevron-right"></i>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
         </button>
       </div>
     </div>

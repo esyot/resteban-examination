@@ -34,13 +34,29 @@ const toggleAccordion = (idx) => {
                 'aspect-square w-10 min-w-[2.5rem] min-h-[2.5rem]',
               ]"
             >
-              <i
-                :class="[
-                  'fas',
-                  openIndex === idx ? 'fa-minus' : 'fa-plus',
-                  'text-orange-800 transition-transform duration-300',
-                ]"
-              ></i>
+              <svg
+                v-if="openIndex === idx"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 text-orange-800 transition-transform duration-300"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg>
+              <svg
+                v-else
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 text-orange-800 transition-transform duration-300"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg>
             </span>
           </div>
         </div>
