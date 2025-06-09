@@ -13,7 +13,7 @@
             dream partner
           </h1>
           <span class="block text-lg mt-4 text-gray-800/80">
-            Overcone the beliefs that block your ability to connect with high quality men
+            Overcome the beliefs that block your ability to connect with high quality men
             and learn the real reason why smart, successful women are still single after
             30.
           </span>
