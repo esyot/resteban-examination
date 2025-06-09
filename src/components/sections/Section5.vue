@@ -33,8 +33,48 @@ const toggleAccordion = (idx) => {
                 openIndex === idx ? 'bg-orange-100 rotate-180' : 'rotate-0',
               ]"
             >
-              <i v-if="openIndex === idx" class="fas fa-minus" aria-hidden="true"></i>
-              <i v-else class="fas fa-plus" aria-hidden="true"></i>
+              <svg
+                v-if="openIndex === idx"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <line
+                  x1="5"
+                  y1="12"
+                  x2="19"
+                  y2="12"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <svg
+                v-else
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <line
+                  x1="12"
+                  y1="5"
+                  x2="12"
+                  y2="19"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <line
+                  x1="5"
+                  y1="12"
+                  x2="19"
+                  y2="12"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
             </span>
           </div>
         </div>
